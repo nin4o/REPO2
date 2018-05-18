@@ -6,8 +6,27 @@
 
 
   <link rel="stylesheet" href="assets/styles/footer-holder.css">
+  <link rel="stylesheet" href="assets/styles/menu.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="DropFunction()">Категории
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href="#home">Фидер риболов</a>
+        <a href="#news">Риболов на шаран</a>
+        <a href="#news">Спининг риболов</a>
+        <a href="#news">Морски риболов</a>
+        <a href="#news">Риболов на плувка</a>
+        </div> 
+      </div>
 
 <!--Footer-->
  <footer>
@@ -19,16 +38,34 @@
       <div>
         <a href ="https://www.facebook.com/profile.php?id=100001291393464" target="_blank">
         <img src="assets/images/Facebook.png" alt="Facebook" style="width:50px">
-
+        </a>
         <a href ="https://github.com/nin4o/REPO2" target="_blank">
           <img src="assets/images/Github.png" alt="Github" style="width:60px">
-        </a>
         </a>
       </div>
         
     </div>
     </div>
  </footer>
+
+<!--Dropdown menu script-->
+ <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function DropFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+    </script>
 
 </body>
 </html>
