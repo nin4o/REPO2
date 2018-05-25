@@ -9,9 +9,22 @@
   <link rel="stylesheet" href="assets/styles/menu.css">
   <link rel="stylesheet" href="assets/styles/dropdown.css">
   <link rel="stylesheet" href="assets/styles/slideshow.css">
+  <link rel="stylesheet" href="assets/styles/login.css">
 </head>
-<body>
-    <img src="assets/images/BgFish.png" alt="BgFish" style="width:100px;height:100px;">
+<body> 
+    <div class="login-div"align="center">
+        <img src="assets/images/BgFish.png" alt="BgFish" style="width:100px;height:100px;" align="center"><br>
+        <input type="email" placeholder="Email..."/>
+        <input type="password" placeholder="Password..."/>
+        <button>Login to Account</button>  
+    </div>
+
+    <div id="user_div" class="loggedin-div" align="center">
+        <p id="user_para">You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
     <!--NavigationBar-->
     <div class="navbar">
         <div class="dropdown">
@@ -19,9 +32,11 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Въдици</a>
+            <a href="#">Макари</a>
+            <a href="#">Влакна</a>
+            <a href="#">Плувки</a>
+            <a href="#">Куки</a>
           </div>
         </div>
         <a href="#fider">Фидер риболов</a>
@@ -139,5 +154,21 @@
     }
     </script>
 
+
+<!--Firebase-->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+
+  var config = {
+    apiKey: "AIzaSyCyaiFJXh7Z2fF60rGMnPlJk0UrdCRQ7E8",
+    authDomain: "firstproject-affca.firebaseapp.com",
+    databaseURL: "https://firstproject-affca.firebaseio.com",
+    projectId: "firstproject-affca",
+    storageBucket: "firstproject-affca.appspot.com",
+    messagingSenderId: "1060826313108"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
