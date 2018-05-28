@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="assets/styles/slideshow.css">
   <link rel="stylesheet" href="assets/styles/login.css">
 </head>
-<body> 
-    <div class="login-div"align="center">
+<body background="assets/images/Freshwater-fishing.jpg"> 
+    <div class="login_div"align="center">
         <img src="assets/images/BgFish.png" alt="BgFish" style="width:100px;height:100px;" align="center"><br>
-        <input type="email" placeholder="Email..."/>
-        <input type="password" placeholder="Password..."/>
-        <button>Login to Account</button>  
+        <input type="email" placeholder="Email..." id="email_field"/>
+        <input type="password" placeholder="Password..." id="password_field"/>
+        <button onclick="login()">Login to Account</button>  
     </div>
 
     <div id="user_div" class="loggedin-div" align="center">
@@ -44,9 +44,10 @@
         <a href="#spining">Спининг риболов</a>
         <a href="#morski">Морски риболов</a>
         <a href="#pluvka">Риболов на плувка</a>
+        <a href="#forum">Форум</a>
         </div> 
       </div>
-    <p style="color:#66ccff; font-size:40px;"align="center">BG FISH - Риболовен магазин </p>
+    <p style="color:#003380; font-size:40px;"align="center">BG FISH - Риболовен магазин </p>
     <!--Slideshow-->
 
     <div class="slideshow-container">
@@ -156,7 +157,6 @@
 
 
 <!--Firebase-->
-
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <script>
 
@@ -170,5 +170,7 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="assets/scripts/loginScript.js"></script>
+
 </body>
 </html>
