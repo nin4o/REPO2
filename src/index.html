@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/styles/slideshow.css">
   <link rel="stylesheet" href="assets/styles/login.css">
 </head>
-<body background="assets/images/Freshwater-fishing.jpg"> 
+<body id="body" background="assets/images/Freshwater-fishing.jpg"> 
     <div class="login_div"align="center">
         <img src="assets/images/BgFish.png" alt="BgFish" style="width:100px;height:100px;" align="center"><br>
         <input type="email" placeholder="Email..." id="email_field"/>
@@ -32,7 +32,7 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="#">Въдици</a>
+            <a onclick="myFunction2()" href="#">Въдици</a>
             <a href="#">Макари</a>
             <a href="#">Влакна</a>
             <a href="#">Плувки</a>
@@ -172,5 +172,11 @@
 </script>
 <script src="assets/scripts/loginScript.js"></script>
 
+
+<script>
+  function myFunction2() {
+      document.getElementById("body").innerHTML="works";
+  }
+  </script>
 </body>
 </html>
