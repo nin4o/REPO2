@@ -48,3 +48,8 @@ function ribolovNaPluvka() {
     document.getElementById("test").style.color="#990099";
 }
 
+function forum(){
+    document.getElementById("test").innerHTML="Should be visible if user is logged in!";
+    document.getElementById("test").style.color="#990099";
+    
+}
