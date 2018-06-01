@@ -5,15 +5,15 @@
   <title>BG FISH</title>
 
 
-  <link rel="stylesheet" href="assets/styles/footer-holder.css">
-  <link rel="stylesheet" href="assets/styles/menu.css">
-  <link rel="stylesheet" href="assets/styles/dropdown.css">
-  <link rel="stylesheet" href="assets/styles/slideshow.css">
-  <link rel="stylesheet" href="assets/styles/login.css">
+  <link rel="stylesheet" href="styles/footer-holder.css">
+  <link rel="stylesheet" href="styles/menu.css">
+  <link rel="stylesheet" href="styles/dropdown.css">
+  <link rel="stylesheet" href="styles/slideshow.css">
+  <link rel="stylesheet" href="styles/login.css">
 </head>
-<body id="body" background="assets/images/Freshwater-fishing.jpg"> 
+<body id="body" background="images/Freshwater-fishing.jpg"> 
     <div class="login_div"align="center">
-        <img src="assets/images/BgFish.png" alt="BgFish" style="width:100px;height:100px;" align="center"><br>
+        <img src="images/BgFish.png" alt="BgFish" style="width:100px;height:100px;" align="center"><br>
         <input type="email" placeholder="Email..." id="email_field"/>
         <input type="password" placeholder="Password..." id="password_field"/>
         <button onclick="login()">Login to Account</button>  
@@ -49,36 +49,36 @@
       </div>
     <p style="color:#003380; font-size:40px;"align="center">BG FISH - Риболовен магазин </p>
     <!--Slideshow-->
-
+<div id="test">
     <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 5</div>
-            <img src="assets/images/BadDay.jpg" style="width:100%">
+            <img src="images/BadDay.jpg" style="width:100%">
             <div class="text">Fishing quotes</div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">2 / 5</div>
-            <img src="assets/images/FineLine.jpg" style="width:100%">
+            <img src="images/FineLine.jpg" style="width:100%">
             <div class="text">Fishing quotes</div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">3 / 5</div>
-            <img src="assets/images/FishHappy.jpg" style="width:100%">
+            <img src="images/FishHappy.jpg" style="width:100%">
             <div class="text">Fishing quotes</div>
           </div>
 
           <div class="mySlides fade">
               <div class="numbertext">4 / 5</div>
-              <img src="assets/images/Fishing.jpg" style="width:100%">
+              <img src="images/Fishing.jpg" style="width:100%">
               <div class="text">Fishing quotes</div>
             </div>
             
             <div class="mySlides fade">
               <div class="numbertext">5 / 5</div>
-              <img src="assets/images/FishingLive.jpg" style="width:100%">
+              <img src="images/FishingLive.jpg" style="width:100%">
               <div class="text">Fishing quotes</div>
             </div>
     </div>
@@ -91,6 +91,7 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
+      </div>
 <!--Footer-->
  <footer>
     <div id="footer-holder">
@@ -100,13 +101,13 @@
 
       <div>
         <a href ="https://www.facebook.com/profile.php?id=100001291393464" target="_blank">
-        <img src="assets/images/Facebook.png" alt="Facebook" style="width:50px">
+        <img src="images/Facebook.png" alt="Facebook" style="width:50px">
         </a>
         <a href ="https://github.com/nin4o/REPO2" target="_blank">
-          <img src="assets/images/Github.png" alt="Github" style="width:60px">
+          <img src="images/Github.png" alt="Github" style="width:60px">
         </a>
         <a href ="index.html" target="_blank">
-            <img src="assets/images/BgFish.png" alt="BgFish" style="width:50px">
+            <img src="images/BgFish.png" alt="BgFish" style="width:50px">
           </a>
       </div>
         
@@ -170,12 +171,12 @@
   };
   firebase.initializeApp(config);
 </script>
-<script src="assets/scripts/loginScript.js"></script>
+<script src="scripts/loginScript.js"></script>
 
 
 <script>
   function myFunction2() {
-      document.getElementById("body").innerHTML="works";
+      document.getElementById("test").innerHTML="Очаквайте скоро!";
   }
   </script>
 </body>
